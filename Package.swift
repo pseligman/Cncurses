@@ -14,7 +14,7 @@ let package = Package(
         .systemLibrary(name: "Cncurses",
                        providers: [
                            .brew(["ncurses"]),
-                           .apt(["ncurses"])
+                           .apt(["ncurses", "libncurses5-dev"])
                        ]
                        )
     ]
